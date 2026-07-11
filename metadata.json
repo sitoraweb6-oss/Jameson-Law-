@@ -1,0 +1,6 @@
+{
+  "name": "Jameson Law | Premium Sydney Solicitors",
+  "description": "An award-winning premium digital legal experience for Jameson Law. Designed with editorial elegance, interactive case results, smart practice area exploration, and seamless consultation booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
