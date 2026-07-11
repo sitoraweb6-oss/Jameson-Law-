@@ -16,6 +16,7 @@ import CaseResults from "./components/CaseResults";
 import NewsCenter from "./components/NewsCenter";
 import ContactAndOffices from "./components/ContactAndOffices";
 import ConsultationForm from "./components/ConsultationForm";
+import { CoreAttribution } from "./components/CoreAttribution";
 
 // Types & Mock Data
 import { 
@@ -780,7 +781,10 @@ export default function App() {
           {/* Sub footer disclosures / copyrights / Back to top */}
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-mono text-white/40">
             <div className="space-y-1.5 text-center md:text-left">
-              <p>© 2026 Jameson Law Private Practice. All rights reserved.</p>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 justify-center md:justify-start">
+                <p>© 2026 Jameson Law Private Practice. All rights reserved.</p>
+                <CoreAttribution variant="footer" />
+              </div>
               <p className="max-w-2xl text-[9px] leading-relaxed">
                 Disclaimer: The informational content displayed across this website and the Dossier Shorts library does not constitute binding legal representation or official counsel under the Legal Profession Uniform Law (NSW). Standard professional fee parameters and client privilege rules apply exclusively upon formal, written legal retainer agreements.
               </p>
@@ -797,6 +801,9 @@ export default function App() {
 
         </div>
       </footer>
+
+      {/* Reusable Core Floating Attribution */}
+      <CoreAttribution variant="floating" />
 
     </div>
   );
